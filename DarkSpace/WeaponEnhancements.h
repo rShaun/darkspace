@@ -39,10 +39,7 @@ public:
 
 	MinorWeaponCooler()
 	{
-		//Changed all "cooler" enhancements to use MT_WEAPON_ENERGY as that is what actually
-		//decreases the cooldown time and MT_WEAPON_COOLDOWN does nothing.
-		//m_Modifiers.push_back(new ShipModifier(MT_WEAPON_COOLDOWN, 1 ) );
-		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_ENERGY, 1 ) );
+		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_COOLDOWN, 1 ) );
 	}
 	virtual const char * getName() const 
 	{ 
@@ -80,9 +77,7 @@ public:
 
 	MinorWeaponCondenser()
 	{
-		//Changed all "condenser" enhancements to match the same modifier arrangement as beam condensers...
 		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_ENERGY, 1 ) );
-		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_DAMAGE, 1 ) );
 	}
 	virtual const char * getName() const 
 	{ 
@@ -122,8 +117,7 @@ public:
 
 	LimitedWeaponCooler()
 	{
-		//m_Modifiers.push_back(new ShipModifier(MT_WEAPON_COOLDOWN, 2 ) );
-		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_ENERGY, 2 ) );
+		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_COOLDOWN, 2 ) );
 	}
 	virtual const char * getName() const 
 	{ 
@@ -161,9 +155,7 @@ public:
 
 	LimitedWeaponCondenser()
 	{
-		//m_Modifiers.push_back(new ShipModifier(MT_WEAPON_ENERGY, 2 ) );
 		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_ENERGY, 2 ) );
-		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_DAMAGE, 1 ) );
 	}
 	virtual const char * getName() const 
 	{ 
@@ -215,8 +207,7 @@ public:
 
 	StandardWeaponCooler()
 	{
-		//m_Modifiers.push_back(new ShipModifier(MT_WEAPON_COOLDOWN, 3 ) );
-		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_ENERGY, 3 ) );
+		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_COOLDOWN, 3 ) );
 	}
 	virtual const char * getName() const 
 	{ 
@@ -278,9 +269,7 @@ public:
 
 	StandardWeaponCondenser()
 	{
-		//m_Modifiers.push_back(new ShipModifier(MT_WEAPON_ENERGY, 3 ) );
-		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_ENERGY, 2 ) );
-		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_DAMAGE, 2 ) );
+		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_ENERGY, 3 ) );
 	}
 	virtual const char * getName() const 
 	{ 
@@ -344,8 +333,7 @@ public:
 
 	ImprovedWeaponCooler()
 	{
-		//m_Modifiers.push_back(new ShipModifier(MT_WEAPON_COOLDOWN, 4 ) );
-		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_ENERGY, 4 ) );
+		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_COOLDOWN, 4 ) );
 	}
 	virtual const char * getName() const 
 	{ 
@@ -407,9 +395,7 @@ public:
 
 	ImprovedWeaponCondenser()
 	{
-		//m_Modifiers.push_back(new ShipModifier(MT_WEAPON_ENERGY, 4 ) );
-		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_ENERGY, 3 ) );
-		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_DAMAGE, 2 ) );
+		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_ENERGY, 4 ) );
 	}
 	virtual const char * getName() const 
 	{ 
@@ -473,8 +459,7 @@ public:
 
 	EnhancedWeaponCooler()
 	{
-		//m_Modifiers.push_back(new ShipModifier(MT_WEAPON_COOLDOWN, 5 ) );
-		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_ENERGY, 5 ) );
+		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_COOLDOWN, 5 ) );
 	}
 	virtual const char * getName() const 
 	{ 
@@ -536,9 +521,7 @@ public:
 
 	EnhancedWeaponCondenser()
 	{
-		//m_Modifiers.push_back(new ShipModifier(MT_WEAPON_ENERGY, 5 ) );
-		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_ENERGY, 3 ) );
-		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_DAMAGE, 3 ) );
+		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_ENERGY, 5 ) );
 	}
 	virtual const char * getName() const 
 	{ 
@@ -638,8 +621,7 @@ public:
 
 	AdvancedWeaponCooler()
 	{
-		//m_Modifiers.push_back(new ShipModifier(MT_WEAPON_COOLDOWN, 6 ) );
-		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_ENERGY, 6 ) );
+		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_COOLDOWN, 6 ) );
 	}
 	virtual const char * getName() const 
 	{ 
@@ -709,9 +691,7 @@ public:
 
 	AdvancedWeaponCondenser()
 	{
-		//m_Modifiers.push_back(new ShipModifier(MT_WEAPON_ENERGY, 6 ) );
-		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_ENERGY, 4 ) );
-		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_DAMAGE, 3 ) );
+		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_ENERGY, 6 ) );
 	}
 	virtual const char * getName() const 
 	{ 
@@ -826,8 +806,7 @@ public:
 		m_Modifiers.push_back(new ShipModifier(MT_BEAM_RANGE,15));
 		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_DAMAGE,-5));
 		m_Modifiers.push_back(new ShipModifier(MT_BEAM_DAMAGE,-5));
-		//m_Modifiers.push_back(new ShipModifier(MT_WEAPON_COOLDOWN,5));
-		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_ENERGY,5));
+		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_COOLDOWN,5));
 		m_Modifiers.push_back(new ShipModifier(MT_BEAM_ENERGY,5));
 	}
 
@@ -858,8 +837,7 @@ public:
 	{
 		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_DAMAGE,5));
 		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_RANGE,5));
-		//m_Modifiers.push_back(new ShipModifier(MT_WEAPON_COOLDOWN,5));
-		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_ENERGY,5));
+		m_Modifiers.push_back(new ShipModifier(MT_WEAPON_COOLDOWN,5));
 		m_Modifiers.push_back(new ShipModifier(MT_BEAM_ENERGY,-5));
 	}
 
